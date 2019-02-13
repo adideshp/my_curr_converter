@@ -8,6 +8,11 @@ Install python 3 from https://realpython.com/installing-python/
 
 virtual environment is a part of standard library for python3. 
 
+Clone the application 
+```sh
+$ git clone  https://github.com/adideshp/my_curr_converter.git
+```
+
 
 Follow the installation steps as mentioned below,
 ```sh
@@ -18,6 +23,7 @@ Above mentioned commands create a virtual-env named <NAME_OF_THE_ENVIRONMENT> (T
 
 Install all the packages listed in requirements.txt. Follow the steps below,
 ```sh
+$ cd my_curr_converter
 $ pip install -r requirements.txt
 ```
 
