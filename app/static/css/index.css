@@ -1,0 +1,17 @@
+.container {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+
+.label_conv {
+    color: black;
+}
+
+.row .cont {
+    margin-top: 20px;
+}
+
+.submit_button {
+    margin-top:40px;
+}

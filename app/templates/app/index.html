@@ -1,0 +1,83 @@
+
+<html>
+    <head>
+        <!-- First include jquery js -->
+        <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../static/css/index.css">
+        {# Load the tag library #}
+        {% load bootstrap3 %}
+        {# Load CSS and JavaScript #}
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
+        <!-- This loads of all of files that you call below from your 'static' folder -->
+        {% load staticfiles %}
+        <!--The static folder consists of your bootstrap files (.css, .js, fonts, etc)-->
+        <!--When you load the static folders is calls all those folders in the static files without having to code each one in individually-->
+    </head>
+<header>
+<div class="container clearfix">   
+
+<div class= "navbar-wrapper">
+    <div class="container">
+        <nav class = "navbar navbar-fixed-top navbar-light bg-light" id="navbar_whole">
+                <div class = "navbar-header">
+                    <!--Below is the top-left hand side of the screen where you usually see a company/project name and a logo-->
+                    <!--The next line sends the user back to the home page-->
+                    <h3>My Currency Converter App</h3>
+                </div>
+        </nav>
+    </div>
+</div>
+</div>
+</header>
+
+<!-- This is where you'll put your page content. Leave it blank for now. -->
+<div class="container" style="margin-top:10%;">
+    <form action="/app/convert/">
+        <div class="row">
+            <div class="col-md-4 text-md-left">
+                <div class="input-group mb-12">
+                    <label for="amount">Amount:</label>
+                    <input type="text" class="form-control" name="amount" id="amount" placeholder="Enter amount">
+                </div>
+                <div class="input-group mb-12">
+                    <label for="from">From:</label>
+                    <select class="form-control" id="from" name="from" searchable="Search here..">
+                        <option value="" disabled selected>Select currency</option>
+                        {% for curr in currencies %}
+                        <option value="{{curr.iso}}">{{curr.iso}} - {{curr.currency_name}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="input-group mb-12">
+                    <label for="to">To:</label>
+                    <select class="form-control" id="to" name="to" searchable="Search here..">
+                        <option value="" disabled selected>Select currency</option>
+                        {% for curr in currencies %}
+                        <option value="{{curr.iso}}">{{curr.iso}} - {{curr.currency_name}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="input-group mb-12 submit_button">
+                    <button type="submit" class="btn btn-primary">Convert</button>
+                </div>
+                
+            </div>
+
+            <div class="col-md-4 text-md-left"></div>
+            <div class="col-md-4 text-md-left jumbotron">
+                    {% if result != None %}
+                    <h4>{{org_amount}} {{from}} = {{result| floatformat:4}} {{to}}</h4>
+                    {% endif %}
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- This is where the footer begins -->
+<footer>
+</footer>
+</html>
