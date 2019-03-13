@@ -1,5 +1,5 @@
 # my_curr_converter
-
+The below mentioned steps are for Ubuntu. The user will have to perform minor modifications to install the app on other platforms
 ### Installation
 
 The application requires Python 3 to run.
