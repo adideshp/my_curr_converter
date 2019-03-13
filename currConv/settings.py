@@ -123,8 +123,5 @@ STATIC_URL = '/static/'
 STATIC_ROOT = "/var/www/currency.com/static/"
 
 
-# XecdClient Settings
-from xecd_rates_client import XecdClient
-xecd = XecdClient('technicaluniversityofmunich541329744', 's3f9u6u57e27scu1ha6b3msghm')
-all_currencies = xecd.currencies()
-currencies = all_currencies['currencies']
+## CODE LEVEL SETTINGS
+BASE_CURRENCY = "EUR"

@@ -22,7 +22,7 @@
 
 <div class= "navbar-wrapper">
     <div class="container">
-        <nav class = "navbar navbar-fixed-top navbar-light bg-light" id="navbar_whole">
+        <nav class = "navbar navbar-fixed-top navbar-light bg-dark" id="navbar_whole">
                 <div class = "navbar-header">
                     <!--Below is the top-left hand side of the screen where you usually see a company/project name and a logo-->
                     <!--The next line sends the user back to the home page-->
@@ -36,45 +36,42 @@
 
 <!-- This is where you'll put your page content. Leave it blank for now. -->
 <div class="container" style="margin-top:10%;">
-    <form action="/app/convert/">
-        <div class="row">
-            <div class="col-md-4 text-md-left">
-                <div class="input-group mb-12">
-                    <label for="amount">Amount:</label>
-                    <input type="text" class="form-control" name="amount" id="amount" placeholder="Enter amount">
-                </div>
-                <div class="input-group mb-12">
-                    <label for="from">From:</label>
-                    <select class="form-control" id="from" name="from" searchable="Search here..">
-                        <option value="" disabled selected>Select currency</option>
-                        {% for curr in currencies %}
-                        <option value="{{curr.iso}}">{{curr.iso}} - {{curr.currency_name}}</option>
-                        {% endfor %}
-                    </select>
-                </div>
-                <div class="input-group mb-12">
-                    <label for="to">To:</label>
-                    <select class="form-control" id="to" name="to" searchable="Search here..">
-                        <option value="" disabled selected>Select currency</option>
-                        {% for curr in currencies %}
-                        <option value="{{curr.iso}}">{{curr.iso}} - {{curr.currency_name}}</option>
-                        {% endfor %}
-                    </select>
-                </div>
-                <div class="input-group mb-12 submit_button">
-                    <button type="submit" class="btn btn-primary">Convert</button>
-                </div>
-                
+    {% if error != None %}
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <span style="fontsize:16; color:red">ERROR: {{error}}</span>
+    
+        </div>
+    </div>
+    {% endif%}
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-6 text-md-left form_container">
+                <form action="/app/convert/" method="get"> 
+                    <div class="row">
+                        <div class="col-md-5">Amount       : </div>
+                        <div class="col-md-7">{{form.amount}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">Convert from  </div>
+                        <div class="col-md-7">{{form.from_curr}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">Convert to   </div>
+                        <div class="col-md-7">{{form.to_curr}}</div>
+                    </div>
+                    <div class="row">
+                            <div class="col-md-12 text-md-center" style="margin-top:20px;"><input type="submit" value="Convert" class="submit_button"></div>
+                    </div>
+                </form>
             </div>
-
-            <div class="col-md-4 text-md-left"></div>
+            <div class="col-md-2 text-md-left"></div>
             <div class="col-md-4 text-md-left jumbotron">
                     {% if result != None %}
                     <h4>{{org_amount}} {{from}} = {{result| floatformat:4}} {{to}}</h4>
                     {% endif %}
             </div>
         </div>
-    </form>
 </div>
 
 <!-- This is where the footer begins -->

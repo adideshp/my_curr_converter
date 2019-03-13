@@ -4,6 +4,10 @@
 }
 
 
+.navbar-header {
+    color: antiquewhite;
+}
+
 .label_conv {
     color: black;
 }
@@ -14,4 +18,19 @@
 
 .submit_button {
     margin-top:40px;
+}
+
+.row {
+    margin-top:20px;
+}
+
+.form_container {
+    border-style: dotted;
+    border-width: 1px;
+}
+
+.submit_button {
+    background-color: #343a40;
+    font-weight: bold;
+    color: antiquewhite;
 }
