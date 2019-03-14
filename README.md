@@ -23,8 +23,10 @@ The application should convert the amount from source currency to target currenc
           5. Show the results on the frontend
           
 ## Test Cases
-1|test_init|CurrencyFormTest|Test form initialization
-2|	test_init_without_choices|	CurrencyFormTest|	Test form initialization with missing args
+|No.  | Name | TargetComponent  | Description |
+|--|--|--|--|
+|1|test_init|CurrencyFormTest|Test form initialization|
+|2|	test_init_without_choices|	CurrencyFormTest|	Test form initialization with missing args|
 3|	test_blank_data	CurrencyFormTest	Test form initialization on blank data
 4|	test_valid_data	CurrencyFormTest	Test form initialization with valid data
 5|	test_special_char_in_amount	CurrencyFormTest	Test form initialization with special chars in amount field
