@@ -52,4 +52,4 @@ $ python manage.py runserver
 ```
 
 ### Test Coverage
-![alt text](coverage\#.png)
+![alt text](coverage.png)
