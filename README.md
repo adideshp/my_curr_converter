@@ -16,7 +16,7 @@ Currency conversion view is responsible to process the form fields and return a 
 The application should convert the amount from source currency to target currency.
 
 ### The application can be evaluated based on the milestones mentioned below,
- Markup : 1. Write a function get_currency that takes no argument and returns a list of all the available currencies
+          1. Write a function get_currency that takes no argument and returns a list of all the available currencies
           2. Base currency is "EUR". Add the base currency to the list of available currencies
           3. Fill all the currency values in the select boxes
           4. Write a function to convert a currency from one type to other
