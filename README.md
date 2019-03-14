@@ -50,8 +50,8 @@ The application should convert the amount from source currency to target currenc
 |23|	test_convert_invalid|	AppViewsTest	|Test convert view for invalid case|
 |24|	test_convert_result	|AppViewsTest|	Test convert view for result|
 |25|	test_convert_form_reinitialize|	AppViewsTest|	Test how the form is reinitialized after the convert view returns|
-||26|	test_convert_same_curr|	AppViewsTest	|Test convert view for same currency conversions|
-||27|	test_convert_status_wo_params|	AppViewsTest	|Test convert view when no get params are passed|
+|26|	test_convert_same_curr|	AppViewsTest	|Test convert view for same currency conversions|
+|27|	test_convert_status_wo_params|	AppViewsTest	|Test convert view when no get params are passed|
 
 
 ## Solution:
