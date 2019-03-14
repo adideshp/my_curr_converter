@@ -96,6 +96,12 @@ The application can be started by executing the command below. The app starts at
 ```sh
 $ python manage.py runserver
 ```
+### Running test cases
+Use the following command to run all the tests in the project
+
+```sh
+$ python manage.py test app
+```
 
 ### Test Coverage
 ![alt text](coverage.png)
