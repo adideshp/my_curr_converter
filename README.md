@@ -2,7 +2,7 @@
 The application should use the public api (https://api.exchangeratesapi.io/latest) to convert the current conversion rate between any two currencies that you select.
 
 ## Application screenshot
-![alt text] (appshot.png)
+![alt text](appshot.png)
 ## Application structure
 
 ## Passing criteria
@@ -50,3 +50,6 @@ The application can be started by executing the command below. The app starts at
 ```sh
 $ python manage.py runserver
 ```
+
+### Test Coverage
+![alt text](coverage#.png)
