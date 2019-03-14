@@ -2,7 +2,7 @@
 The application should use the public api (https://api.exchangeratesapi.io/latest) to convert the current conversion rate between any two currencies that you select.
 
 ## Application screenshot
-![alt text] (https://photos.app.goo.gl/9HwWNVHTG8VHUTAC7)
+![alt text] (appshot.png)
 ## Application structure
 
 ## Passing criteria
