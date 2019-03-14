@@ -27,31 +27,31 @@ The application should convert the amount from source currency to target currenc
 |--|--|--|--|
 |1|test_init|CurrencyFormTest|Test form initialization|
 |2|	test_init_without_choices|	CurrencyFormTest|	Test form initialization with missing args|
-3|	test_blank_data	CurrencyFormTest	Test form initialization on blank data
-4|	test_valid_data	CurrencyFormTest	Test form initialization with valid data
-5|	test_special_char_in_amount	CurrencyFormTest	Test form initialization with special chars in amount field
-6|	test_alphabets_in_amount	CurrencyFormTest	Test form initialization with alphabets in amount field
-7|	test_float_in_amount	CurrencyFormTest	Test form initialization with floating point number in amount field
-8|	test_zero_in_amount	CurrencyFormTest	Test form initialization with 0 in the amount field
-9|	test_negetive_in_amount	CurrencyFormTest	Test form initialization with negative amount field
-10|	test_same_to_from_currency	CurrencyFormTest	Test form initialization for same source and target currency fields
-11|	test_get_currencies_valid	HelperFunctionsTest	Test get_currencies for valid case
-12|	test_get_currencies_output_type	HelperFunctionsTest	Test get_currencies output type
-13|	test_update_curr_list	HelperFunctionsTest	Test update_curr for valid output
-14|	test_update_curr_no_args	HelperFunctionsTest	Test update_curr for no args
-15|	test_update_curr_type	HelperFunctionsTest	Test update_curr output type
-16|	test_create_choices_valid	HelperFunctionsTest	Test create_choice for valid cases
-17|	test_create_choices_no_args	HelperFunctionsTest	Test create_choice with no args
-18|	test_create_choices_type	HelperFunctionsTest	Test create_choice for the output type
-19|	test_index_status	AppViewsTest	Test Index view response status
-20|	test_index_context_keys	AppViewsTest	Test keys in context in index response
-21|	test_index_context_values	AppViewsTest	Test values in context in index response
-22|	test_convert_valid	AppViewsTest	Test convert view for valid case
-23|	test_convert_invalid	AppViewsTest	Test convert view for invalid case
-24|	test_convert_result	AppViewsTest	Test convert view for result
-25|	test_convert_form_reinitialize	AppViewsTest	Test how the form is reinitialized after the convert view returns
-26|	test_convert_same_curr	AppViewsTest	Test convert view for same currency conversions
-27|	test_convert_status_wo_params	AppViewsTest	Test convert view when no get params are passed
+|3|	test_blank_data|	CurrencyFormTest|	Test form initialization on blank data|
+|4|	test_valid_data|	CurrencyFormTest|	Test form initialization with valid data|
+|5|	test_special_char_in_amount|	CurrencyFormTest|	Test form initialization with special chars in amount field|
+|6|	test_alphabets_in_amount|	CurrencyFormTest|	Test form initialization with alphabets in amount field|
+|7|	test_float_in_amount|	CurrencyFormTest|	Test form initialization with floating point number in amount field|
+|8|	test_zero_in_amount|	CurrencyFormTest|	Test form initialization with 0 in the amount field|
+|9|	test_negetive_in_amount|	CurrencyFormTest|	Test form initialization with negative amount field|
+|10|	test_same_to_from_currency|	CurrencyFormTest|	Test form initialization for same source and target currency fields|
+|11|	test_get_currencies_valid|	HelperFunctionsTest|	Test get_currencies for valid case|
+|12|	test_get_currencies_output_type|	HelperFunctionsTest	|Test get_currencies output type|
+|13|	test_update_curr_list|	HelperFunctionsTest	|Test update_curr for valid output|
+|14|	test_update_curr_no_args|	HelperFunctionsTest	|Test update_curr for no args|
+|15|	test_update_curr_type|	HelperFunctionsTest	|Test update_curr output type|
+|16|	test_create_choices_valid|	HelperFunctionsTest	|Test create_choice for valid cases|
+|17|	test_create_choices_no_args|	HelperFunctionsTest	|Test create_choice with no args|
+|18|	test_create_choices_type|	HelperFunctionsTest	|Test create_choice for the output type|
+|19|	test_index_status	|AppViewsTest|	Test Index view response status|
+|20|	test_index_context_keys|	AppViewsTest|	Test keys in context in index response|
+|21|	test_index_context_values|	AppViewsTest|	Test values in context in index response|
+|22|	test_convert_valid|	AppViewsTest|	Test convert view for valid case|
+|23|	test_convert_invalid|	AppViewsTest	|Test convert view for invalid case|
+|24|	test_convert_result	|AppViewsTest|	Test convert view for result|
+|25|	test_convert_form_reinitialize|	AppViewsTest|	Test how the form is reinitialized after the convert view returns|
+||26|	test_convert_same_curr|	AppViewsTest	|Test convert view for same currency conversions|
+||27|	test_convert_status_wo_params|	AppViewsTest	|Test convert view when no get params are passed|
 
 
 ## Solution:
