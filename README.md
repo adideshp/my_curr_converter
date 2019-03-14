@@ -1,4 +1,14 @@
-# my_curr_converter
+# Currency Converter Application
+The application should use the public api (https://api.exchangeratesapi.io/latest) to convert the current conversion rate between any two currencies that you select.
+
+## Application screenshot
+![alt text] (https://photos.app.goo.gl/9HwWNVHTG8VHUTAC7)
+## Application structure
+
+## Passing criteria
+
+
+## Solution:
 The below mentioned steps are for Ubuntu. The user will have to perform minor modifications to install the app on other platforms
 ### Installation
 
